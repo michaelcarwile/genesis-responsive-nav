@@ -1,0 +1,45 @@
+@media only screen and (max-width: 1024px) {
+
+	#primary-menu-icon {
+		color: #eee;
+		cursor: pointer;
+		display: block;
+		padding: 16px;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	#primary-menu-icon::before {
+		content: 'MENU \2630';
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	#primary-menu-icon:hover::before {
+		content: 'MENU \2637';
+	}
+
+	#primary-menu-icon:active::before {
+		content: 'MENU \2637';
+	}
+
+	#menu-primary-navigation li {
+		display: block;
+		text-align: center;
+	}
+	#menu-primary-navigation li a {
+		padding: 10px;
+		padding: 1rem;
+	}
+	#menu-primary-navigation li a:hover,
+	#menu-primary-navigation li a:active {
+		border-radius: 0;
+		color: #fff;
+	}
+
+	/* Hide Primary Navigation Menu until it's toggled via script */
+
+	#menu-primary-navigation {
+		display: none;
+	}
+}
